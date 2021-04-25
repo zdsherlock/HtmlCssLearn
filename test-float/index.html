@@ -7,31 +7,83 @@
 		<meta name="Description" content="">
 		<title>float作业</title>
 		<style>
+			/*初始化*/
+			
 			* {
 				padding: 0px;
 				margin: 0px;
 				}
+				
+			/*header部分布局*/
+			
 			header {
 				width: 970px;
 				margin: auto;
+				margin-bottom: 10px;
+				float: 10px;
 				}
-			.red {
+			header .red {
 				float:left;
 				height: 103px;
 				width:277px;
 				background-color: red;
 				}
-			.green1 {
+			header .green1 {
 				float: right;
 				height: 49px;
 				width: 137px;
-				background-color: green;
+				background-color: lightgreen;
 				margin-bottom: 8px;
 				}
-			.green2 {
+			header .green2 {
 				float: right;
 				height: 46px;
 				width: 679px;
+				background-color: lightgreen;
+				}
+				
+			/*main部分布局*/
+			
+			main {
+				width: 970px;
+				margin: auto;
+				}
+			main .left {
+				height: 435px;
+				width: 310px;
+				background-color: yellow;
+				margin-right: 10px;
+				float: left;
+				}
+			main .right .top {
+				background-color: blue;
+				margin-bottom: 10px;
+				}
+			main .right .top .topLeft {
+				margin-right: 10px;
+				}
+			main .right .top .topLeft .first {
+				height: 240px;
+				weight: 450px;
+				margin-bottom: 10px;
+				}
+			main .right .top .topLeft .second {
+				height: 110px;
+				width: 450px;
+				margin-bottom: 10px;
+				}
+			main .right .top .topLeft .third {
+				height: 30px;
+				width: 450px;
+				}
+			main .right .top .topRight {
+				height: 400px;
+				width: 190px;
+				background-color: purple;
+				}
+			marin .right .bottom {
+				height: 25px;
+				width: 650px;
 				background-color: green;
 				}
 		</style>
@@ -46,6 +98,29 @@
 			</div>
 		</header>
 		<main>
+			<section class="left">
+				<div>
+				</div>
+			</section>
+			<section class="right">
+				<div class="top">
+					<div class="topLeft">
+						<div class="first">
+						</div>
+						<div class="second">
+						</div>
+						<div class="third">
+						</div>
+					</div>
+					<div class="topRight">
+						
+					</div>
+				</div>
+				<div class="bottom">
+					<div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer>
 		</footer>
