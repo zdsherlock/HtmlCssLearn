@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*格式化*/
+        * {
+            margin:0;
+            padding:0;
+        }
+        /*display:block的属性*/
+        div.block div{
+            background-color: red;
+            display: block; /*默认值*/
+            border: 1px solid black; /*为了做区分*/
+        }
+        /*display: block 默认占满父级，可以设置宽高*/
+        div.block div:last-child {
+            width: 100px;
+        }
+
+        /*display:inline 的属性*/
+        div.inline div{
+            background-color: yellow;
+            display: inline;
+        }
+        div.inlineBlock div{
+            background-color:  blue;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!--用于展示display:block-->
+    <div class="block">
+        <div>测试</div>
+        <div>测试</div>
+        <div>测试</div>
+    </div>
+    <!--用于展示display:inline-->
+    <div class="inline">
+        <div>测试</div>
+        <div>测试</div>
+        <div>测试</div>
+    </div>
+    <!--用于展示display:inline-block-->
+    <div class="inlineBlock">
+        <div>测试</div>
+        <div>测试</div>
+        <div>测试</div>
+    </div>
+</body>
+</html>
