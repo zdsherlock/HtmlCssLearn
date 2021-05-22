@@ -1,0 +1,1 @@
+# 设计一张emp表，列包括，edi,ename,sex,birthday,salary,deptId;
